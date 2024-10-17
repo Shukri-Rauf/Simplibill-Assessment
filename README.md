@@ -18,7 +18,7 @@ Follow the steps below to install and run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Shukri-Rauf/Simplibill-Assessment.git
+git clone git@github.com:Shukri-Rauf/Simplibill-Assessment.git
 cd Simplibill-Assessment
 ```
 
