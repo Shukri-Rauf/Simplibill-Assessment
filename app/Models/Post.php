@@ -24,10 +24,5 @@ class Post extends Model
     {
         return $query->where('status', 'approved');
     }
-
-    //returns pending posts
-    public function scopePending($query)
-    {
-        return $query->where('status', 'pending');
-    }
+    
 }

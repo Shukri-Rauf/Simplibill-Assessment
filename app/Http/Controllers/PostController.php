@@ -26,7 +26,7 @@ class PostController extends Controller
     // home page only get approved posts
     public function showApprovedPosts()
     {
-        $posts = Post::where('status', 'approved')->get(); // Get only approved posts
+        $posts = Post::Approved()->get(); // Get only approved posts
         return view('posts.index', compact('posts'));
     }
 
@@ -40,8 +40,7 @@ class PostController extends Controller
 
         Post::create([
             'title' => $request->title,
-            'content' => $request->content,
-            'status' => 'pending', // Default status is 'pending'
+            'content' => $request->content
         ]);
 
         return redirect()->route('posts.index')->with('success', 'Post submitted for approval.');
